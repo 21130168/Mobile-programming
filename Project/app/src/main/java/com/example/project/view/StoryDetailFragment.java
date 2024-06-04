@@ -18,7 +18,7 @@ import com.example.project.R;
 
 import java.util.ArrayList;
 
-public class StoryInforFragment extends AppCompatActivity {
+public class StoryDetailFragment extends AppCompatActivity {
 
     EditText etxt_cmt;
     Button btn_cmt;
@@ -31,7 +31,7 @@ public class StoryInforFragment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         EdgeToEdge.enable(this);
-        setContentView(R.layout.item_content);
+        setContentView(R.layout.stroies_detail);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.item), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
